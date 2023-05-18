@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
     "@types/node": "^20.1.7",
     "@typescript-eslint/eslint-plugin": "^5.59.6",
     "eslint": "^8.40.0",
@@ -19,6 +20,7 @@
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "prisma": "^4.14.0",
     "tsx": "^3.12.7",
     "typescript": "^5.0.4"
