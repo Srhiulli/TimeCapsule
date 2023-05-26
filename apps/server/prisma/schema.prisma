@@ -11,6 +11,24 @@ datasource db {
 }
 
 model User {
-  id   String @id @default(uuid())
-  nome String
+  id        String @id @default(uuid())
+  githudid  Int    @unique
+  name      String
+  login     String
+  avatarUrl String
+
+  memories Memory[]
 }
+
+model Memory {
+  id       String   @id @default(uuid())
+  coverUrl String
+  content  String
+  isPublic Boolean  @default(false)
+  createAt DateTime @default(now())
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+}
+
+//Para migrar a versão nova rode npx prisma migrate dev
