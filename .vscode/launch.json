@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug node application",
+        "program": "${workspaceFolder}/server/src/server.ts",
+        "runtimeArgs": ["--inspect"],
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "skipFiles": ["<node_internals>/**"],
+        "restart": true,
+        "sourceMaps": true,
+        "smartStep": true,
+        "env": {
+          "TS_NODE_PROJECT": "tsconfig.json"
+        },
+        "preLaunchTask": "npm: dev"
+      }
+    ]
+  }
+  
